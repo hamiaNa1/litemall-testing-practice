@@ -1,0 +1,22 @@
+{
+  "upstream": "https://github.com/linlinjava/litemall",
+  "commit_from_github_api": "a1ef964a718b7277925b19ea26afe78ea3a1d325",
+  "download": "https://codeload.github.com/linlinjava/litemall/zip/refs/heads/master",
+  "archive_sha256": "985ac243e9d3b6b820ac5159c7b33e7c2bfc4034175ab756a3c98dc70371fa56",
+  "business_source_changes": 0,
+  "frontend_deployment_change": "Added regenerator-runtime 0.14.1; frozen generated npm lock",
+  "versions": {
+    "java": "Zulu OpenJDK 8.0.504",
+    "maven": "3.9.9",
+    "mysql": "8.4.11",
+    "node": "24.20.0",
+    "python": "3.10.11",
+    "allure_cli": "2.34.1"
+  },
+  "archive_files_verified_against_git_tree": 1592,
+  "commit_verified": true,
+  "modified_upstream_files": [
+    "litemall-vue/package.json"
+  ],
+  "business_source_verified_unchanged": true
+}

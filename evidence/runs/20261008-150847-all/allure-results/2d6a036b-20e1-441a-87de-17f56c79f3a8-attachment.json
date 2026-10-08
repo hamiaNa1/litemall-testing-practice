@@ -1,0 +1,12 @@
+{
+  "sql": "SELECT id,order_status FROM litemall_order WHERE user_id=%s",
+  "parameters": [
+    63
+  ],
+  "rows": [
+    {
+      "id": 12,
+      "order_status": 102
+    }
+  ]
+}

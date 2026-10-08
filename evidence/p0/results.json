@@ -1,0 +1,50 @@
+[
+  {
+    "id": "F001",
+    "title": "商品总数可查询",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F002",
+    "title": "商品详情关联库存货品",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F003",
+    "title": "缺少登录参数被拒绝",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F004",
+    "title": "不存在账号登录失败",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F005",
+    "title": "无 Token 不可查询购物车",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F006",
+    "title": "无效 Token 不可查询订单",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F007",
+    "title": "注册必填校验",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F008",
+    "title": "短信验证码服务未启用",
+    "status": "passed",
+    "detail": "All assertions passed"
+  }
+]

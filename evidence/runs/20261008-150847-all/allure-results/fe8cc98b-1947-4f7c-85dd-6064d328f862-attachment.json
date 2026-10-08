@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:6255/wx/goods/list?keyword=%E6%AF%8D%E4%BA%B2%E8%8A%82%E7%A4%BC%E7%89%A9-%E8%88%92%E9%80%82%E5%AE%89%E7%9D%A1%E7%BB%84%E5%90%88&page=1&limit=10&categoryId=0",
+  "status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "total": 1,
+      "pages": 1,
+      "limit": 10,
+      "page": 1,
+      "list": [
+        {
+          "id": 1181000,
+          "name": "母亲节礼物-舒适安睡组合",
+          "brief": "安心舒适是最好的礼物",
+          "picUrl": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+          "isNew": true,
+          "isHot": false,
+          "counterPrice": 2618.0,
+          "retailPrice": 2598.0
+        }
+      ],
+      "filterCategoryList": [
+        {
+          "id": 1008008,
+          "name": "被枕",
+          "keywords": "",
+          "desc": "守护你的睡眠时光",
+          "pid": 1005000,
+          "iconUrl": "http://yanxuan.nosdn.127.net/927bc33f7ae2895dd6c11cf91f5e3228.png",
+          "picUrl": "http://yanxuan.nosdn.127.net/b43ef7cececebe6292d2f7f590522e05.png",
+          "level": "L2",
+          "sortOrder": 2,
+          "addTime": "2018-02-01 00:00:00",
+          "updateTime": "2018-02-01 00:00:00",
+          "deleted": false
+        }
+      ]
+    },
+    "errmsg": "成功"
+  }
+}

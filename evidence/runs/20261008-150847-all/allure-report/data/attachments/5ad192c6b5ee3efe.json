@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_mismatched_goods_product_must_be_rejected",
+  "phase": "call",
+  "outcome": "failed",
+  "duration": 0.01695209999979852,
+  "failure": "sut = namespace(db=<framework.client.Db object at 0x0000022A0F470730>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x0000022A0F501EA0>, user=<framework.client.Actor object at 0x0000022A0F671690>)\n\n    @pytest.mark.defect\n    @allure.issue('BUG-003','商品与货品所属关系未校验')\n    def test_mismatched_goods_product_must_be_rejected(sut):\n        p=sut.product\n        foreign=sut.db.query('SELECT id,goods_id,price,number FROM litemall_goods_product WHERE deleted=0 AND number>0 AND goods_id<>%s ORDER BY id LIMIT 1',(p['goods_id'],))[0]\n        response=sut.user.api.call('POST','/wx/cart/add',body={'goodsId':p['goods_id'],'productId':foreign['id'],'number':1})\n        rows=sut.db.query('SELECT id,goods_id,product_id,goods_name,price FROM litemall_cart WHERE user_id=%s',(sut.user.id,))\n        evidence('BUG-003',{'requested_goods':p['goods_id'],'foreign_product':foreign,'stored_cart':rows,'response':response.json()})\n        assert response.status_code==200\n>       assert response.json()['errno'] in [401,402,713], 'Product must belong to the supplied goods'\nE       AssertionError: Product must belong to the supplied goods\nE       assert 0 in [401, 402, 713]\n\ntests\\api\\test_business.py:160: AssertionError"
+}

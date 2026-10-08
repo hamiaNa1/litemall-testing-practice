@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_login_invalid[empty-body]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.017503600000054576,
+  "failure": null
+}

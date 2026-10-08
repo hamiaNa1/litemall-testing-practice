@@ -1,0 +1,62 @@
+{
+  "method": "GET",
+  "path": "/wx/order/detail",
+  "request": null,
+  "params": {
+    "orderId": 12
+  },
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "expressInfo": [],
+      "orderInfo": {
+        "consignee": "QA 测试",
+        "address": "广东省深圳市南山区 仅测试不发货 QA",
+        "addTime": "2026-10-08 15:08:55",
+        "orderSn": "20261008779620",
+        "actualPrice": 999.0,
+        "mobile": "13800138000",
+        "message": "QA 独立测试订单，无真实支付",
+        "orderStatusText": "已取消",
+        "aftersaleStatus": 0,
+        "goodsPrice": 999.0,
+        "couponPrice": 0.0,
+        "id": 12,
+        "freightPrice": 0.0,
+        "handleOption": {
+          "cancel": false,
+          "delete": true,
+          "pay": false,
+          "comment": false,
+          "confirm": false,
+          "refund": false,
+          "rebuy": false,
+          "aftersale": false
+        }
+      },
+      "orderGoods": [
+        {
+          "id": 12,
+          "orderId": 12,
+          "goodsId": 1181000,
+          "goodsName": "母亲节礼物-舒适安睡组合",
+          "goodsSn": "1181000",
+          "productId": 1,
+          "number": 1,
+          "price": 999.0,
+          "specifications": [
+            "1.5m床垫*1+枕头*2",
+            "浅杏粉"
+          ],
+          "picUrl": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+          "comment": 0,
+          "addTime": "2026-10-08 15:08:55",
+          "updateTime": "2026-10-08 15:08:55",
+          "deleted": false
+        }
+      ]
+    },
+    "errmsg": "成功"
+  }
+}

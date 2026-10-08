@@ -1,0 +1,16 @@
+{
+  "sql": "SELECT id,user_id,order_status,goods_price,freight_price,actual_price FROM litemall_order WHERE id=%s",
+  "parameters": [
+    13
+  ],
+  "rows": [
+    {
+      "id": 13,
+      "user_id": 64,
+      "order_status": 101,
+      "goods_price": "1998.00",
+      "freight_price": "0.00",
+      "actual_price": "1998.00"
+    }
+  ]
+}

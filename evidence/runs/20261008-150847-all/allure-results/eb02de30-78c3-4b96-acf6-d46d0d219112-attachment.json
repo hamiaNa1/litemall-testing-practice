@@ -1,0 +1,41 @@
+{
+  "victim_user": 71,
+  "attacker_user": 70,
+  "cart_id": 23,
+  "cart_before": [
+    {
+      "id": 23,
+      "user_id": 71,
+      "product_id": 1,
+      "number": 1,
+      "deleted": 0
+    }
+  ],
+  "cart_after": [
+    {
+      "id": 23,
+      "user_id": 71,
+      "product_id": 1,
+      "number": 1,
+      "deleted": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": 15,
+      "user_id": 70,
+      "order_status": 101
+    }
+  ],
+  "stock_before": 100,
+  "stock_after": 99,
+  "response": {
+    "errno": 0,
+    "data": {
+      "orderId": 15,
+      "grouponLinkId": 0,
+      "payed": false
+    },
+    "errmsg": "成功"
+  }
+}

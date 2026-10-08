@@ -1,0 +1,15 @@
+{
+  "sql": "SELECT id,user_id,product_id,number,deleted FROM litemall_cart WHERE id=%s",
+  "parameters": [
+    23
+  ],
+  "rows": [
+    {
+      "id": 23,
+      "user_id": 71,
+      "product_id": 1,
+      "number": 1,
+      "deleted": 1
+    }
+  ]
+}

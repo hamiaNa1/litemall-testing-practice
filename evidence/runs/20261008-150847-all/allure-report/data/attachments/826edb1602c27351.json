@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/ui/test_core_pages.py::test_ui_login_wrong_password",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.6894305999999233,
+  "failure": null
+}

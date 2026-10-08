@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_cart_cross_user_update_rejected",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.42134429999987333,
+  "failure": null
+}

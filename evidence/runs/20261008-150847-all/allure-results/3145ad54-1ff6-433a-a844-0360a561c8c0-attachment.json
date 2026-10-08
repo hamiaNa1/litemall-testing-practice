@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_token_required[no-token-/wx/order/list]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.026389199999812263,
+  "failure": null
+}

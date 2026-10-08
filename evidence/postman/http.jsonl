@@ -1,0 +1,1 @@
+{"time": "2026-10-08T07:00:47.347581+00:00", "method": "POST", "path": "/wx/auth/login", "request": {"username": "qa_run_e99705581a6e405c", "password": "[REDACTED]"}, "params": null, "http_status": 200, "response": {"errno": 0, "data": {"userInfo": {"nickName": "qa_run_e99705581a6e405c", "avatarUrl": ""}, "token": "[REDACTED]"}, "errmsg": "成功"}}

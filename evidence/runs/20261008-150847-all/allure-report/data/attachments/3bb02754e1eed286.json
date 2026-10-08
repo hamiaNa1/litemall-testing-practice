@@ -1,0 +1,19 @@
+{
+  "method": "POST",
+  "path": "/wx/order/submit",
+  "request": {
+    "cartId": 0,
+    "addressId": 17,
+    "couponId": 0,
+    "userCouponId": 0,
+    "grouponRulesId": 0,
+    "grouponLinkId": 0,
+    "message": "QA 独立测试订单，无真实支付"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 402,
+    "errmsg": "参数值不对"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/ui/test_core_pages.py::test_ui_detail_cancel_should_cancel_order",
+  "phase": "call",
+  "outcome": "failed",
+  "duration": 1.889982300000156,
+  "failure": "sut = namespace(db=<framework.client.Db object at 0x0000022A0F470730>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x0000022A0FA371C0>, user=<framework.client.Actor object at 0x0000022A0F614D90>)\nui_page = <Page url='http://127.0.0.1:6255/#/order/order-detail?orderId=17'>\n\n    @pytest.mark.defect\n    @allure.issue('BUG-004','订单详情取消按钮调用删除接口')\n    def test_ui_detail_cancel_should_cancel_order(sut,ui_page):\n        oid=check(sut.user.submit(sut.user.cart(sut.product),sut.user.address()))['orderId']\n        LoginPage(ui_page).login(sut.user.username,config()['TEST_PASSWORD'])\n        response=OrderDetailPage(ui_page).cancel(oid)\n        row=order_row(sut.db,oid)\n        evidence('BUG-004',{'order_id':oid,'requested_url':response.url,'response':response.json(),'sql_order':row,\n            'stock_before_order':sut.baseline,'stock_after_click':stock(sut.db,sut.product['id'])})\n>       assert row['order_status']==102, 'Confirming cancel on the detail page must cancel the pending order'\nE       AssertionError: Confirming cancel on the detail page must cancel the pending order\nE       assert 101 == 102\n\ntests\\ui\\test_core_pages.py:45: AssertionError"
+}

@@ -1,0 +1,13 @@
+{
+  "sql": "SELECT product_id,number,price FROM litemall_order_goods WHERE order_id=%s",
+  "parameters": [
+    12
+  ],
+  "rows": [
+    {
+      "product_id": 1,
+      "number": 1,
+      "price": "999.00"
+    }
+  ]
+}

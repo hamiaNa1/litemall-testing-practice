@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="40" time="43.279" timestamp="2026-10-08T15:08:48.113008+08:00" hostname="starain"><testcase classname="tests.api.test_business" name="test_login_invalid[empty-body]" time="0.021" /><testcase classname="tests.api.test_business" name="test_login_invalid[missing-password]" time="0.023" /><testcase classname="tests.api.test_business" name="test_login_invalid[missing-username]" time="0.022" /><testcase classname="tests.api.test_business" name="test_login_invalid[empty-strings]" time="0.032" /><testcase classname="tests.api.test_business" name="test_login_invalid[unknown-user]" time="0.024" /><testcase classname="tests.api.test_business" name="test_login_wrong_password" time="0.671" /><testcase classname="tests.api.test_business" name="test_login_success_and_token" time="0.412" /><testcase classname="tests.api.test_business" name="test_token_required[no-token-/wx/cart/index]" time="0.017" /><testcase classname="tests.api.test_business" name="test_token_required[no-token-/wx/order/list]" time="0.028" /><testcase classname="tests.api.test_business" name="test_token_required[no-token-/wx/address/list]" time="0.021" /><testcase classname="tests.api.test_business" name="test_token_required[invalid-token-/wx/cart/index]" time="0.012" /><testcase classname="tests.api.test_business" name="test_token_required[invalid-token-/wx/order/list]" time="0.027" /><testcase classname="tests.api.test_business" name="test_token_required[invalid-token-/wx/address/list]" time="0.020" /><testcase classname="tests.api.test_business" name="test_register_negative[required-fields]" time="0.007" /><testcase classname="tests.api.test_business" name="test_register_negative[invalid-mobile]" time="0.023" /><testcase classname="tests.api.test_business" name="test_register_negative[incorrect-code]" time="0.021" /><testcase classname="tests.api.test_business" name="test_sms_service_disabled" time="0.024" /><testcase classname="tests.api.test_business" name="test_goods_list_limits[min-one]" time="0.120" /><testcase classname="tests.api.test_business" name="test_goods_list_limits[two]" time="0.111" /><testcase classname="tests.api.test_business" name="test_goods_list_limits[default-ten]" time="0.128" /><testcase classname="tests.api.test_business" name="test_goods_detail_sql_consistency" time="0.511" /><testcase classname="tests.api.test_business" name="test_goods_search" time="0.482" /><testcase classname="tests.api.test_business" name="test_cart_invalid_quantity[-1]" time="0.440" /><testcase classname="tests.api.test_business" name="test_cart_invalid_quantity[0]" time="0.431" /><testcase classname="tests.api.test_business" name="test_cart_over_stock" time="0.424" /><testcase classname="tests.api.test_business" name="test_cart_missing_product" time="0.431" /><testcase classname="tests.api.test_business" name="test_cart_add_update_delete" time="0.459" /><testcase classname="tests.api.test_business" name="test_cart_cross_user_update_rejected" time="0.851" /><testcase classname="tests.api.test_business" name="test_order_create_cancel_business_flow[1]" time="0.518" /><testcase classname="tests.api.test_business" name="test_order_create_cancel_business_flow[2]" time="0.515" /><testcase classname="tests.api.test_business" name="test_order_required_params" time="0.427" /><testcase classname="tests.api.test_business" name="test_empty_cart_no_order" time="0.439" /><testcase classname="tests.api.test_business" name="test_other_user_order_access_rejected" time="0.886" /><testcase classname="tests.api.test_business" name="test_missing_cart_number_should_be_validation_error" time="0.408"><failure message="AssertionError: Business errno expected 401, actual 502: 系统内部错误">sut = namespace(db=&lt;framework.client.Db object at 0x0000022A0F470730&gt;, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=&lt;function sut.&lt;locals&gt;.new_actor at 0x0000022A0F594550&gt;, user=&lt;framework.client.Actor object at 0x0000022A0F5F9660&gt;)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-001','缺少数量导致内部异常')
+    def test_missing_cart_number_should_be_validation_error(sut):
+        p=sut.product
+        response=sut.user.api.call('POST','/wx/cart/add',body={'goodsId':p['goods_id'],'productId':p['id']})
+        evidence('BUG-001',{'response':response.json(),'stock':stock(sut.db,p['id'])})
+&gt;       check(response,401)
+
+tests\api\test_business.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+response = &lt;Response [200]&gt;, errno = 401, http = 200
+
+    def check(response, errno=0, http=200):
+        assert response.status_code == http, f'HTTP expected {http}, actual {response.status_code}'
+        data = response.json()
+        assert isinstance(data, dict) and isinstance(data.get('errno'), int), 'Missing integer errno'
+        assert isinstance(data.get('errmsg'), str), 'Missing errmsg'
+&gt;       assert data['errno'] == errno, f'Business errno expected {errno}, actual {data["errno"]}: {data["errmsg"]}'
+E       AssertionError: Business errno expected 401, actual 502: 系统内部错误
+
+framework\client.py:64: AssertionError</failure></testcase><testcase classname="tests.api.test_business" name="test_submit_foreign_cart_must_be_rejected" time="0.875"><failure message="AssertionError: Foreign cart must be rejected without creating an order&#10;assert 0 in [401, 402, 715]">sut = namespace(db=&lt;framework.client.Db object at 0x0000022A0F470730&gt;, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=&lt;function sut.&lt;locals&gt;.new_actor at 0x0000022A0F501120&gt;, user=&lt;framework.client.Actor object at 0x0000022A0F4ABBE0&gt;)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-002','跨用户购物车可被下单')
+    def test_submit_foreign_cart_must_be_rejected(sut):
+        victim=sut.new_actor(); cid=victim.cart(sut.product,1); aid=sut.user.address()
+        before=sut.db.query('SELECT id,user_id,product_id,number,deleted FROM litemall_cart WHERE id=%s',(cid,))
+        response=sut.user.submit(cid,aid)
+        after=sut.db.query('SELECT id,user_id,product_id,number,deleted FROM litemall_cart WHERE id=%s',(cid,))
+        orders=sut.db.query('SELECT id,user_id,order_status FROM litemall_order WHERE user_id=%s',(sut.user.id,))
+        evidence('BUG-002',{'victim_user':victim.id,'attacker_user':sut.user.id,'cart_id':cid,'cart_before':before,
+            'cart_after':after,'orders':orders,'stock_before':sut.baseline,'stock_after':stock(sut.db,sut.product['id']),'response':response.json()})
+        assert response.status_code==200
+&gt;       assert response.json()['errno'] in [401,402,715], 'Foreign cart must be rejected without creating an order'
+E       AssertionError: Foreign cart must be rejected without creating an order
+E       assert 0 in [401, 402, 715]
+
+tests\api\test_business.py:148: AssertionError</failure></testcase><testcase classname="tests.api.test_business" name="test_mismatched_goods_product_must_be_rejected" time="0.434"><failure message="AssertionError: Product must belong to the supplied goods&#10;assert 0 in [401, 402, 713]">sut = namespace(db=&lt;framework.client.Db object at 0x0000022A0F470730&gt;, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=&lt;function sut.&lt;locals&gt;.new_actor at 0x0000022A0F501EA0&gt;, user=&lt;framework.client.Actor object at 0x0000022A0F671690&gt;)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-003','商品与货品所属关系未校验')
+    def test_mismatched_goods_product_must_be_rejected(sut):
+        p=sut.product
+        foreign=sut.db.query('SELECT id,goods_id,price,number FROM litemall_goods_product WHERE deleted=0 AND number&gt;0 AND goods_id&lt;&gt;%s ORDER BY id LIMIT 1',(p['goods_id'],))[0]
+        response=sut.user.api.call('POST','/wx/cart/add',body={'goodsId':p['goods_id'],'productId':foreign['id'],'number':1})
+        rows=sut.db.query('SELECT id,goods_id,product_id,goods_name,price FROM litemall_cart WHERE user_id=%s',(sut.user.id,))
+        evidence('BUG-003',{'requested_goods':p['goods_id'],'foreign_product':foreign,'stored_cart':rows,'response':response.json()})
+        assert response.status_code==200
+&gt;       assert response.json()['errno'] in [401,402,713], 'Product must belong to the supplied goods'
+E       AssertionError: Product must belong to the supplied goods
+E       assert 0 in [401, 402, 713]
+
+tests\api\test_business.py:160: AssertionError</failure></testcase><testcase classname="tests.ui.test_core_pages" name="test_ui_login_wrong_password" time="2.992" /><testcase classname="tests.ui.test_core_pages" name="test_ui_search_product" time="6.696" /><testcase classname="tests.ui.test_core_pages" name="test_ui_create_order_cancel_from_list" time="17.405" /><testcase classname="tests.ui.test_core_pages" name="test_ui_detail_cancel_should_cancel_order" time="5.506"><failure message="AssertionError: Confirming cancel on the detail page must cancel the pending order&#10;assert 101 == 102">sut = namespace(db=&lt;framework.client.Db object at 0x0000022A0F470730&gt;, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=&lt;function sut.&lt;locals&gt;.new_actor at 0x0000022A0FA371C0&gt;, user=&lt;framework.client.Actor object at 0x0000022A0F614D90&gt;)
+ui_page = &lt;Page url='http://127.0.0.1:6255/#/order/order-detail?orderId=17'&gt;
+
+    @pytest.mark.defect
+    @allure.issue('BUG-004','订单详情取消按钮调用删除接口')
+    def test_ui_detail_cancel_should_cancel_order(sut,ui_page):
+        oid=check(sut.user.submit(sut.user.cart(sut.product),sut.user.address()))['orderId']
+        LoginPage(ui_page).login(sut.user.username,config()['TEST_PASSWORD'])
+        response=OrderDetailPage(ui_page).cancel(oid)
+        row=order_row(sut.db,oid)
+        evidence('BUG-004',{'order_id':oid,'requested_url':response.url,'response':response.json(),'sql_order':row,
+            'stock_before_order':sut.baseline,'stock_after_click':stock(sut.db,sut.product['id'])})
+&gt;       assert row['order_status']==102, 'Confirming cancel on the detail page must cancel the pending order'
+E       AssertionError: Confirming cancel on the detail page must cancel the pending order
+E       assert 101 == 102
+
+tests\ui\test_core_pages.py:45: AssertionError</failure></testcase></testsuite></testsuites>

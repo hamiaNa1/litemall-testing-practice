@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_register_negative[required-fields]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.004213199999867356,
+  "failure": null
+}

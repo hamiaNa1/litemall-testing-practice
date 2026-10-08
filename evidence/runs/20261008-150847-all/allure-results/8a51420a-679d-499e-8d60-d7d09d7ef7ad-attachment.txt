@@ -1,0 +1,1 @@
+INFO     root:client.py:53 POST /wx/auth/register HTTP=200 errno=703

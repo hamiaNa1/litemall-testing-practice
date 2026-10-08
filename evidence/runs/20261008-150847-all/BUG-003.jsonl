@@ -1,0 +1,1 @@
+{"time": "2026-10-08T07:08:58.742917+00:00", "requested_goods": 1181000, "foreign_product": {"id": 7, "goods_id": 1006002, "price": "899.00", "number": 100}, "stored_cart": [{"id": 24, "goods_id": 1181000, "product_id": 7, "goods_name": "母亲节礼物-舒适安睡组合", "price": "899.00"}], "response": {"errno": 0, "data": 1, "errmsg": "成功"}}

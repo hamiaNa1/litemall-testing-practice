@@ -1,0 +1,16 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/register",
+  "request": {
+    "username": "qa_registration",
+    "password": "[REDACTED]",
+    "mobile": "123",
+    "code": "000000"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 707,
+    "errmsg": "手机号格式不正确"
+  }
+}

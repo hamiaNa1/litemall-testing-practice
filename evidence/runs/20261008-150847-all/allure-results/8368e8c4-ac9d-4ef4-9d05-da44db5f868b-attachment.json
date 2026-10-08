@@ -1,0 +1,15 @@
+{
+  "sql": "SELECT id,goods_id,product_id,goods_name,price FROM litemall_cart WHERE user_id=%s",
+  "parameters": [
+    72
+  ],
+  "rows": [
+    {
+      "id": 24,
+      "goods_id": 1181000,
+      "product_id": 7,
+      "goods_name": "母亲节礼物-舒适安睡组合",
+      "price": "899.00"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_login_wrong_password",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.2248538999997436,
+  "failure": null
+}

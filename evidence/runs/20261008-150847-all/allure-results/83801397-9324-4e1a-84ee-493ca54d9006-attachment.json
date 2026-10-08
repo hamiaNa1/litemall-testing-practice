@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/login",
+  "request": {
+    "username": "qa_missing"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 401,
+    "errmsg": "参数不对"
+  }
+}

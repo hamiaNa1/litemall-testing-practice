@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="litemall 真实订单业务流" tests="14" time="0.337">
+  <testsuite name="01 匿名商品查询" id="09717f17-4b15-4b7b-91c8-72e8e464bbce" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.047">
+    <testcase name="HTTP 200" time="0.047" classname="01"/>
+    <testcase name="业务码 0" time="0.047" classname="01"/>
+    <testcase name="响应结构" time="0.047" classname="01"/>
+    <testcase name="列表有商品" time="0.047" classname="01"/>
+  </testsuite>
+  <testsuite name="02 无Token购物车" id="de8dc8fb-831d-4fb9-9742-ec709d101747" timestamp="2026-10-08T07:00:57.131Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="HTTP 200" time="0.004" classname="02Token"/>
+    <testcase name="业务码 501" time="0.004" classname="02Token"/>
+    <testcase name="响应结构" time="0.004" classname="02Token"/>
+  </testsuite>
+  <testsuite name="03 缺失登录参数" id="7ab25b4e-cacc-4c76-a1d4-f240dde37a41" timestamp="2026-10-08T07:00:57.131Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="HTTP 200" time="0.004" classname="03"/>
+    <testcase name="业务码 401" time="0.004" classname="03"/>
+    <testcase name="响应结构" time="0.004" classname="03"/>
+  </testsuite>
+  <testsuite name="04 账号密码登录" id="bbf88cf1-63d7-408c-b8cd-d416e863dd20" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.212">
+    <testcase name="HTTP 200" time="0.212" classname="04"/>
+    <testcase name="业务码 0" time="0.212" classname="04"/>
+    <testcase name="响应结构" time="0.212" classname="04"/>
+    <testcase name="Token存在" time="0.212" classname="04"/>
+  </testsuite>
+  <testsuite name="05 商品详情及规格" id="ad17a89d-948b-4b7a-be47-3a0f612e1243" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.013">
+    <testcase name="HTTP 200" time="0.013" classname="05"/>
+    <testcase name="业务码 0" time="0.013" classname="05"/>
+    <testcase name="响应结构" time="0.013" classname="05"/>
+    <testcase name="商品ID匹配" time="0.013" classname="05"/>
+  </testsuite>
+  <testsuite name="06 数量零被拒绝" id="2c9a0cf6-a2cb-4502-88b7-4892ab5d8ce8" timestamp="2026-10-08T07:00:57.131Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="HTTP 200" time="0.004" classname="06"/>
+    <testcase name="业务码 401" time="0.004" classname="06"/>
+    <testcase name="响应结构" time="0.004" classname="06"/>
+  </testsuite>
+  <testsuite name="07 加入购物车" id="bfbf26ed-f13e-48ee-bf1b-790edf888fd1" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.009">
+    <testcase name="HTTP 200" time="0.009" classname="07"/>
+    <testcase name="业务码 0" time="0.009" classname="07"/>
+    <testcase name="响应结构" time="0.009" classname="07"/>
+    <testcase name="购物车ID" time="0.009" classname="07"/>
+  </testsuite>
+  <testsuite name="08 购物车数量" id="8ed198a0-a60b-4c0a-b65c-47b1cc0b454a" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.006">
+    <testcase name="HTTP 200" time="0.006" classname="08"/>
+    <testcase name="业务码 0" time="0.006" classname="08"/>
+    <testcase name="响应结构" time="0.006" classname="08"/>
+    <testcase name="购买数量2" time="0.006" classname="08"/>
+  </testsuite>
+  <testsuite name="09 收货地址" id="ea4fb7bf-99a8-4c36-b014-a0452c480356" timestamp="2026-10-08T07:00:57.131Z" tests="3" failures="0" errors="0" time="0.006">
+    <testcase name="HTTP 200" time="0.006" classname="09"/>
+    <testcase name="业务码 0" time="0.006" classname="09"/>
+    <testcase name="响应结构" time="0.006" classname="09"/>
+  </testsuite>
+  <testsuite name="10 提交待付款订单" id="53d83d1a-37c7-418f-aa6e-c7e613702274" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.010">
+    <testcase name="HTTP 200" time="0.010" classname="10"/>
+    <testcase name="业务码 0" time="0.010" classname="10"/>
+    <testcase name="响应结构" time="0.010" classname="10"/>
+    <testcase name="订单ID" time="0.010" classname="10"/>
+  </testsuite>
+  <testsuite name="11 查询订单详情" id="eed7a4b7-d4ff-4d21-a870-7f97fa0fc725" timestamp="2026-10-08T07:00:57.131Z" tests="5" failures="0" errors="0" time="0.005">
+    <testcase name="HTTP 200" time="0.005" classname="11"/>
+    <testcase name="业务码 0" time="0.005" classname="11"/>
+    <testcase name="响应结构" time="0.005" classname="11"/>
+    <testcase name="订单关联" time="0.005" classname="11"/>
+    <testcase name="待付款可取消" time="0.005" classname="11"/>
+  </testsuite>
+  <testsuite name="12 提交后购物车清空" id="2ffe2e63-dbfa-4817-92b6-4092082b1938" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.004">
+    <testcase name="HTTP 200" time="0.004" classname="12"/>
+    <testcase name="业务码 0" time="0.004" classname="12"/>
+    <testcase name="响应结构" time="0.004" classname="12"/>
+    <testcase name="购物车清空" time="0.004" classname="12"/>
+  </testsuite>
+  <testsuite name="13 取消订单" id="a5b11e1b-0bb4-43ec-9a1c-6e5d7161457f" timestamp="2026-10-08T07:00:57.131Z" tests="3" failures="0" errors="0" time="0.009">
+    <testcase name="HTTP 200" time="0.009" classname="13"/>
+    <testcase name="业务码 0" time="0.009" classname="13"/>
+    <testcase name="响应结构" time="0.009" classname="13"/>
+  </testsuite>
+  <testsuite name="14 查询已取消订单" id="5d589830-60b5-4647-b734-33a7b66623a5" timestamp="2026-10-08T07:00:57.131Z" tests="4" failures="0" errors="0" time="0.004">
+    <testcase name="HTTP 200" time="0.004" classname="14"/>
+    <testcase name="业务码 0" time="0.004" classname="14"/>
+    <testcase name="响应结构" time="0.004" classname="14"/>
+    <testcase name="取消状态" time="0.004" classname="14"/>
+  </testsuite>
+</testsuites>

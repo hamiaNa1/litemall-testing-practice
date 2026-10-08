@@ -1,0 +1,19 @@
+{
+  "public_report_browser_checked": true,
+  "test_statistics": {
+    "failed": 4,
+    "broken": 0,
+    "skipped": 0,
+    "passed": 36,
+    "unknown": 0,
+    "total": 40
+  },
+  "failure_detail_loaded": "test_ui_detail_cancel_should_cancel_order",
+  "unchanged_test_code_files": 8,
+  "original_screenshots_verified": 13,
+  "trace_archives_valid": 4,
+  "trace_json_events_parsed": 1358,
+  "source_manifest_hashes_verified": 1101,
+  "sut_modified": false,
+  "note": "This verifies publication artifacts, not a new run of the 40 business tests."
+}

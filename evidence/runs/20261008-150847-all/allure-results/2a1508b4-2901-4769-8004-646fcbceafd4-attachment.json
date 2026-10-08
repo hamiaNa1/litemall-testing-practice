@@ -1,0 +1,11 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/login",
+  "request": {},
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 401,
+    "errmsg": "参数不对"
+  }
+}

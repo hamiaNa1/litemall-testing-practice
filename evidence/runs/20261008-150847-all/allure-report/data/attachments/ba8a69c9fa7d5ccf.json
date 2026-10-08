@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "path": "/wx/cart/add",
+  "request": {
+    "goodsId": 1181000,
+    "number": 1
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 401,
+    "errmsg": "参数不对"
+  }
+}

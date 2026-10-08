@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_cart_add_update_delete",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.04073470000002999,
+  "failure": null
+}

@@ -1,0 +1,3 @@
+java.lang.NullPointerException: null
+	at org.linlinjava.litemall.wx.web.WxCartController.add(WxCartController.java:122)
+	at org.linlinjava.litemall.wx.web.WxCartController$$FastClassBySpringCGLIB$$2d571e3a.invoke(<generated>)

@@ -1,0 +1,13 @@
+{
+  "method": "GET",
+  "path": "/wx/order/detail",
+  "request": null,
+  "params": {
+    "orderId": 14
+  },
+  "http_status": 200,
+  "response": {
+    "errno": 720,
+    "errmsg": "订单不存在"
+  }
+}

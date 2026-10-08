@@ -1,0 +1,32 @@
+...F                                                                     [100%]
+================================== FAILURES ===================================
+__________________ test_ui_detail_cancel_should_cancel_order __________________
+
+sut = namespace(db=<framework.client.Db object at 0x000001CA173D4520>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x000001CA17AC9750>, user=<framework.client.Actor object at 0x000001CA17AF0A90>)
+ui_page = <Page url='http://127.0.0.1:6255/#/order/order-detail?orderId=11'>
+
+    @pytest.mark.defect
+    @allure.issue('BUG-004','订单详情取消按钮调用删除接口')
+    def test_ui_detail_cancel_should_cancel_order(sut,ui_page):
+        oid=check(sut.user.submit(sut.user.cart(sut.product),sut.user.address()))['orderId']
+        LoginPage(ui_page).login(sut.user.username,config()['TEST_PASSWORD'])
+        response=OrderDetailPage(ui_page).cancel(oid)
+        row=order_row(sut.db,oid)
+        evidence('BUG-004',{'order_id':oid,'requested_url':response.url,'response':response.json(),'sql_order':row,
+            'stock_before_order':sut.baseline,'stock_after_click':stock(sut.db,sut.product['id'])})
+>       assert row['order_status']==102, 'Confirming cancel on the detail page must cancel the pending order'
+E       AssertionError: Confirming cancel on the detail page must cancel the pending order
+E       assert 101 == 102
+
+tests\ui\test_core_pages.py:45: AssertionError
+----------------------------- Captured log setup ------------------------------
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+------------------------------ Captured log call ------------------------------
+INFO     root:client.py:53 POST /wx/cart/fastadd HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/address/save HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/order/submit HTTP=200 errno=0
+---------------------------- Captured log teardown ----------------------------
+INFO     root:client.py:53 POST /wx/order/cancel HTTP=200 errno=0
+=========================== short test summary info ===========================
+FAILED tests/ui/test_core_pages.py::test_ui_detail_cancel_should_cancel_order
+1 failed, 3 passed in 32.49s

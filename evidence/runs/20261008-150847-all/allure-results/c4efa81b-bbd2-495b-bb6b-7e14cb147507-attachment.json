@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_login_invalid[missing-username]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.018815299999914714,
+  "failure": null
+}

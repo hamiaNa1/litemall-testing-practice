@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:6255/wx/auth/login",
+  "status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "userInfo": {
+        "nickName": "qa_run_20be9eb6179c47c1",
+        "avatarUrl": ""
+      },
+      "token": "[REDACTED]"
+    },
+    "errmsg": "成功"
+  }
+}

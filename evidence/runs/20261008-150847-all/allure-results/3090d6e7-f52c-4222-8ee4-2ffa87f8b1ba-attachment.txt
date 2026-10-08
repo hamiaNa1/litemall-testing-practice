@@ -1,0 +1,2 @@
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+INFO     root:client.py:53 GET /wx/goods/detail HTTP=200 errno=0

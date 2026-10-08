@@ -1,0 +1,14 @@
+{
+  "sql": "SELECT id,goods_id,price,number FROM litemall_goods_product WHERE deleted=0 AND number>0 AND goods_id<>%s ORDER BY id LIMIT 1",
+  "parameters": [
+    1181000
+  ],
+  "rows": [
+    {
+      "id": 7,
+      "goods_id": 1006002,
+      "price": "899.00",
+      "number": 100
+    }
+  ]
+}

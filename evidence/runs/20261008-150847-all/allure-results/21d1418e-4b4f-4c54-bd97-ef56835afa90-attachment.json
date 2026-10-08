@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/regCaptcha",
+  "request": {
+    "mobile": "13800138000"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 701,
+    "errmsg": "小程序后台验证码服务不支持"
+  }
+}

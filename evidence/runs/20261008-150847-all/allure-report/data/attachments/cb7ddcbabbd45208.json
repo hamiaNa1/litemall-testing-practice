@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/ui/test_core_pages.py::test_ui_create_order_cancel_from_list",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 3.0293688000001566,
+  "failure": null
+}

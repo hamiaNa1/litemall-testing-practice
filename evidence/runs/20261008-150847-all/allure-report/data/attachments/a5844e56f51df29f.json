@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_token_required[invalid-token-/wx/cart/index]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.010765099999844097,
+  "failure": null
+}

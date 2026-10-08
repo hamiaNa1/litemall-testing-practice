@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:8765/",
+  "total": 40,
+  "page_text": "Allure\nOverview\nCategories\nSuites\nGraphs\nTimeline\nBehaviors\nPackages\nEn\nCollapse\nALLURE REPORT 10/8/2026\n15:08:48 - 15:09:28 (40s 070ms)\n40\ntest cases\n90%\nSUITES 2 items total\ntests.api\n3\n33\ntests.ui\n1\n3\nShow all\nENVIRONMENT\nOS\nWindows\nJava\nOpenJDK8.0.504\nPython\n3.10.11\nMySQL\n8.4.11\nDatabase\nlitemall_qa_on_127.0.0.1_13306\nShow all\nFEATURES BY STORIES 1 item total\n开源商城业务与自动化测试\n4\n25\nShow all\nTREND\nThere is nothing to show\nCATEGORIES 1 item total\nProduct defects\n4\nShow all\nEXECUTORS\nThere is no information about tests executors",
+  "screenshot": "allure-overview.png"
+}

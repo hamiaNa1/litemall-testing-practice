@@ -1,0 +1,3 @@
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/address/save HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/order/submit HTTP=200 errno=402

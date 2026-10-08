@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_sms_service_disabled",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.021762399999715853,
+  "failure": null
+}

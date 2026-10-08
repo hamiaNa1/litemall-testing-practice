@@ -1,0 +1,10 @@
+{"time": "2026-10-08T06:59:09.357410+00:00", "sql": "SELECT p.id,p.goods_id,p.number,p.price,g.name FROM litemall_goods_product p JOIN litemall_goods g ON g.id=p.goods_id WHERE p.deleted=0 AND g.deleted=0 AND g.is_on_sale=1 AND p.number>=5 ORDER BY p.id LIMIT 1", "parameters": [], "rows": [{"id": 1, "goods_id": 1181000, "number": 100, "price": "999.00", "name": "母亲节礼物-舒适安睡组合"}]}
+{"time": "2026-10-08T06:59:09.359520+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T06:59:10.011745+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T06:59:10.012744+00:00", "sql": "SELECT number FROM litemall_cart WHERE id=%s AND user_id=%s", "parameters": [2, 6], "rows": [{"number": 2}]}
+{"time": "2026-10-08T06:59:10.034397+00:00", "sql": "SELECT id,user_id,order_status,goods_price,freight_price,actual_price FROM litemall_order WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "user_id": 6, "order_status": 101, "goods_price": "1998.00", "freight_price": "0.00", "actual_price": "1998.00"}]}
+{"time": "2026-10-08T06:59:10.034397+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 98}]}
+{"time": "2026-10-08T06:59:10.076935+00:00", "sql": "SELECT id,user_id,order_status,goods_price,freight_price,actual_price FROM litemall_order WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "user_id": 6, "order_status": 102, "goods_price": "1998.00", "freight_price": "0.00", "actual_price": "1998.00"}]}
+{"time": "2026-10-08T06:59:10.076935+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T06:59:10.076935+00:00", "sql": "SELECT id,order_status FROM litemall_order WHERE user_id=%s", "parameters": [6], "rows": [{"id": 1, "order_status": 102}]}
+{"time": "2026-10-08T06:59:10.087141+00:00", "sql": "SELECT id FROM litemall_user WHERE id=%s", "parameters": [6], "rows": []}

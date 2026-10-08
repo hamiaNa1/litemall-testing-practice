@@ -1,0 +1,6 @@
+current_database	mysql_port
+litemall_qa	13306
+id	goods_id	number	price
+1	1181000	100	999.00
+remaining_fixture_users
+0

@@ -1,0 +1,11 @@
+{
+  "method": "GET",
+  "path": "/wx/cart/index",
+  "request": null,
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 501,
+    "errmsg": "请登录"
+  }
+}

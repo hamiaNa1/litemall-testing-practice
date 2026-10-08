@@ -1,0 +1,2 @@
+{"time": "2026-10-08T07:29:25.348839+00:00", "nodeid": "tests/api/test_business.py::test_order_create_cancel_business_flow[1]", "phase": "call", "outcome": "passed", "duration": 0.18859119999979157, "failure": null}
+{"time": "2026-10-08T07:29:25.860530+00:00", "nodeid": "tests/api/test_business.py::test_order_create_cancel_business_flow[2]", "phase": "call", "outcome": "passed", "duration": 0.09716579999985697, "failure": null}

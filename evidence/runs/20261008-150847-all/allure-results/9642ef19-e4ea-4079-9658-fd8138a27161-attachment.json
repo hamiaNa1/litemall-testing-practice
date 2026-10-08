@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_other_user_order_access_rejected",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.44947240000010424,
+  "failure": null
+}

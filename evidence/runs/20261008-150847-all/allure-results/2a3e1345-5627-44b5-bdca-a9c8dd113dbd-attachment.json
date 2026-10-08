@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_login_invalid[missing-password]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.020203699999910896,
+  "failure": null
+}

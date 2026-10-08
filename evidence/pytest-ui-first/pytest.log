@@ -1,0 +1,9 @@
+15:07:09 INFO POST /wx/auth/login HTTP=200 errno=0
+15:07:12 INFO POST /wx/auth/login HTTP=200 errno=0
+15:07:18 INFO POST /wx/auth/login HTTP=200 errno=0
+15:07:18 INFO POST /wx/address/save HTTP=200 errno=0
+15:07:36 INFO POST /wx/auth/login HTTP=200 errno=0
+15:07:36 INFO POST /wx/cart/fastadd HTTP=200 errno=0
+15:07:36 INFO POST /wx/address/save HTTP=200 errno=0
+15:07:36 INFO POST /wx/order/submit HTTP=200 errno=0
+15:07:41 INFO POST /wx/order/cancel HTTP=200 errno=0

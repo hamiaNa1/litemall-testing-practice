@@ -1,0 +1,11 @@
+{
+  "sql": "SELECT number FROM litemall_cart WHERE id=%s",
+  "parameters": [
+    19
+  ],
+  "rows": [
+    {
+      "number": 1
+    }
+  ]
+}

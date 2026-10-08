@@ -1,0 +1,40 @@
+{
+  "method": "GET",
+  "path": "/wx/cart/index",
+  "request": null,
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "cartTotal": {
+        "goodsCount": 3,
+        "checkedGoodsCount": 3,
+        "goodsAmount": 2997.0,
+        "checkedGoodsAmount": 2997.0
+      },
+      "cartList": [
+        {
+          "id": 18,
+          "userId": 60,
+          "goodsId": 1181000,
+          "goodsSn": "1181000",
+          "goodsName": "母亲节礼物-舒适安睡组合",
+          "productId": 1,
+          "price": 999.0,
+          "number": 3,
+          "specifications": [
+            "1.5m床垫*1+枕头*2",
+            "浅杏粉"
+          ],
+          "checked": true,
+          "picUrl": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+          "addTime": "2026-10-08 15:08:53",
+          "updateTime": "2026-10-08 15:08:53",
+          "deleted": false
+        }
+      ]
+    },
+    "errmsg": "成功"
+  }
+}

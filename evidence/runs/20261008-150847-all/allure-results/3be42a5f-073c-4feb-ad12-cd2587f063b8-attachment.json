@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_goods_detail_sql_consistency",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.09648020000031465,
+  "failure": null
+}

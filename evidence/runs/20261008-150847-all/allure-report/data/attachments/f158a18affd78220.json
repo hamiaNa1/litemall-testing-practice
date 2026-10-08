@@ -1,0 +1,7 @@
+{
+  "response": {
+    "errno": 502,
+    "errmsg": "系统内部错误"
+  },
+  "stock": 100
+}

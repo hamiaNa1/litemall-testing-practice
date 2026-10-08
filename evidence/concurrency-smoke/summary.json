@@ -1,0 +1,263 @@
+{
+  "scope": "Local read-only smoke, NOT a capacity benchmark or JMeter test",
+  "threads": 5,
+  "requests": 50,
+  "passed": 50,
+  "failed": 0,
+  "elapsed_seconds": 0.182127600000058,
+  "median_ms": 14.221900000165988,
+  "p95_ms": 18.417700000100012,
+  "stock_unchanged": true,
+  "raw_samples": [
+    {
+      "request": 0,
+      "milliseconds": 21.51270000013028,
+      "passed": true
+    },
+    {
+      "request": 1,
+      "milliseconds": 18.877200000133598,
+      "passed": true
+    },
+    {
+      "request": 2,
+      "milliseconds": 18.417700000100012,
+      "passed": true
+    },
+    {
+      "request": 3,
+      "milliseconds": 18.46209999985149,
+      "passed": true
+    },
+    {
+      "request": 4,
+      "milliseconds": 17.428300000119634,
+      "passed": true
+    },
+    {
+      "request": 5,
+      "milliseconds": 13.064899999790214,
+      "passed": true
+    },
+    {
+      "request": 6,
+      "milliseconds": 10.641000000305212,
+      "passed": true
+    },
+    {
+      "request": 7,
+      "milliseconds": 12.620800000149757,
+      "passed": true
+    },
+    {
+      "request": 8,
+      "milliseconds": 12.924000000111846,
+      "passed": true
+    },
+    {
+      "request": 9,
+      "milliseconds": 18.207199999778823,
+      "passed": true
+    },
+    {
+      "request": 10,
+      "milliseconds": 14.875299999857816,
+      "passed": true
+    },
+    {
+      "request": 11,
+      "milliseconds": 13.441300000067713,
+      "passed": true
+    },
+    {
+      "request": 12,
+      "milliseconds": 13.178599999719154,
+      "passed": true
+    },
+    {
+      "request": 13,
+      "milliseconds": 15.663600000152655,
+      "passed": true
+    },
+    {
+      "request": 14,
+      "milliseconds": 16.830000000027212,
+      "passed": true
+    },
+    {
+      "request": 15,
+      "milliseconds": 13.404300000274816,
+      "passed": true
+    },
+    {
+      "request": 16,
+      "milliseconds": 13.831700000082492,
+      "passed": true
+    },
+    {
+      "request": 17,
+      "milliseconds": 14.65619999999035,
+      "passed": true
+    },
+    {
+      "request": 18,
+      "milliseconds": 17.357600000195816,
+      "passed": true
+    },
+    {
+      "request": 19,
+      "milliseconds": 14.32040000008783,
+      "passed": true
+    },
+    {
+      "request": 20,
+      "milliseconds": 14.021700000284909,
+      "passed": true
+    },
+    {
+      "request": 21,
+      "milliseconds": 15.186999999968975,
+      "passed": true
+    },
+    {
+      "request": 22,
+      "milliseconds": 14.201600000433245,
+      "passed": true
+    },
+    {
+      "request": 23,
+      "milliseconds": 15.163099999881524,
+      "passed": true
+    },
+    {
+      "request": 24,
+      "milliseconds": 12.40090000010241,
+      "passed": true
+    },
+    {
+      "request": 25,
+      "milliseconds": 14.863100000184204,
+      "passed": true
+    },
+    {
+      "request": 26,
+      "milliseconds": 13.340200000129698,
+      "passed": true
+    },
+    {
+      "request": 27,
+      "milliseconds": 16.832400000112102,
+      "passed": true
+    },
+    {
+      "request": 28,
+      "milliseconds": 13.84989999996833,
+      "passed": true
+    },
+    {
+      "request": 29,
+      "milliseconds": 14.386600000307226,
+      "passed": true
+    },
+    {
+      "request": 30,
+      "milliseconds": 13.218499999766209,
+      "passed": true
+    },
+    {
+      "request": 31,
+      "milliseconds": 13.894900000195776,
+      "passed": true
+    },
+    {
+      "request": 32,
+      "milliseconds": 17.397299999629467,
+      "passed": true
+    },
+    {
+      "request": 33,
+      "milliseconds": 12.305100000048697,
+      "passed": true
+    },
+    {
+      "request": 34,
+      "milliseconds": 13.0525999998099,
+      "passed": true
+    },
+    {
+      "request": 35,
+      "milliseconds": 15.838900000289868,
+      "passed": true
+    },
+    {
+      "request": 36,
+      "milliseconds": 13.883399999940593,
+      "passed": true
+    },
+    {
+      "request": 37,
+      "milliseconds": 16.207199999826116,
+      "passed": true
+    },
+    {
+      "request": 38,
+      "milliseconds": 12.246400000094582,
+      "passed": true
+    },
+    {
+      "request": 39,
+      "milliseconds": 14.24219999989873,
+      "passed": true
+    },
+    {
+      "request": 40,
+      "milliseconds": 16.31489999999758,
+      "passed": true
+    },
+    {
+      "request": 41,
+      "milliseconds": 13.814399999773741,
+      "passed": true
+    },
+    {
+      "request": 42,
+      "milliseconds": 14.833400000043184,
+      "passed": true
+    },
+    {
+      "request": 43,
+      "milliseconds": 12.108599999919534,
+      "passed": true
+    },
+    {
+      "request": 44,
+      "milliseconds": 12.60790000014822,
+      "passed": true
+    },
+    {
+      "request": 45,
+      "milliseconds": 15.578800000184856,
+      "passed": true
+    },
+    {
+      "request": 46,
+      "milliseconds": 14.821799999936047,
+      "passed": true
+    },
+    {
+      "request": 47,
+      "milliseconds": 11.943500000143104,
+      "passed": true
+    },
+    {
+      "request": 48,
+      "milliseconds": 10.870300000078714,
+      "passed": true
+    },
+    {
+      "request": 49,
+      "milliseconds": 8.820300000024872,
+      "passed": true
+    }
+  ]
+}

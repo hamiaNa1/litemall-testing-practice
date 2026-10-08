@@ -1,0 +1,17 @@
+F001 passed ��Ʒ�����ɲ�ѯ
+Traceback (most recent call last):
+F002 passed ��Ʒ�����������Ʒ
+F003 passed ȱ�ٵ�¼�������ܾ�
+F004 passed �������˺ŵ�¼ʧ��
+F005 passed �� Token ���ɲ�ѯ���ﳵ
+F006 passed ��Ч Token ���ɲ�ѯ����
+F007 passed ע�����У��
+F008 passed ������֤�����δ����
+{"passed": 8, "failed": 0}
+  File "[PROJECT]\scripts\p0_smoke.py", line 29, in <module>
+    actor=Actor.create(db)
+  File "[PROJECT]\framework\client.py", line 104, in create
+    login = check(api.call('POST','/wx/auth/login',body={'username':username,'password':c['TEST_PASSWORD']}))
+  File "[PROJECT]\framework\client.py", line 64, in check
+    assert data['errno'] == errno, f'Business errno expected {errno}, actual {data["errno"]}: {data["errmsg"]}'
+AssertionError: Business errno expected 0, actual 700: �˺����벻��

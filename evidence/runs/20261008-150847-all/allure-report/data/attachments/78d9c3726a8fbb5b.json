@@ -1,0 +1,21 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/login",
+  "request": {
+    "username": "qa_run_9c47d10c03034390",
+    "password": "[REDACTED]"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "userInfo": {
+        "nickName": "qa_run_9c47d10c03034390",
+        "avatarUrl": ""
+      },
+      "token": "[REDACTED]"
+    },
+    "errmsg": "成功"
+  }
+}

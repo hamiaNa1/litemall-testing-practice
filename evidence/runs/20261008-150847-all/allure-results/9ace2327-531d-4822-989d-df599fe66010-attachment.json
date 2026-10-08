@@ -1,0 +1,8 @@
+{
+  "test": "tests/ui/test_core_pages.py::test_ui_detail_cancel_should_cancel_order",
+  "page_errors": [
+    "Object"
+  ],
+  "screenshot": "[PROJECT]\\evidence\\runs\\20261008-150847-all\\ui\\test_ui_detail_cancel_should_cancel_order\\failure.png",
+  "trace": "[PROJECT]\\evidence\\runs\\20261008-150847-all\\ui\\test_ui_detail_cancel_should_cancel_order\\trace.zip"
+}

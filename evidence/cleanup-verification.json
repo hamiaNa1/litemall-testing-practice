@@ -1,0 +1,8 @@
+{
+  "remaining_fixture_users": 0,
+  "product_1_stock": 100,
+  "database": {
+    "db": "litemall_qa",
+    "port": 13306
+  }
+}

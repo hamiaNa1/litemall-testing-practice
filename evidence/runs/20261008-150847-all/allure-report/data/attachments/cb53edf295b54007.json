@@ -1,0 +1,22 @@
+{
+  "method": "POST",
+  "path": "/wx/address/save",
+  "request": {
+    "id": 0,
+    "name": "QA 测试",
+    "tel": "13800138000",
+    "province": "广东省",
+    "city": "深圳市",
+    "county": "南山区",
+    "areaCode": "440305",
+    "addressDetail": "仅测试不发货 QA",
+    "isDefault": true
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": 21,
+    "errmsg": "成功"
+  }
+}

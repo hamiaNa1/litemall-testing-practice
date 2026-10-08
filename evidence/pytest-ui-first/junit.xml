@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="32.463" timestamp="2026-10-08T15:07:08.757715+08:00" hostname="starain"><testcase classname="tests.ui.test_core_pages" name="test_ui_login_wrong_password" time="3.030" /><testcase classname="tests.ui.test_core_pages" name="test_ui_search_product" time="6.242" /><testcase classname="tests.ui.test_core_pages" name="test_ui_create_order_cancel_from_list" time="17.816" /><testcase classname="tests.ui.test_core_pages" name="test_ui_detail_cancel_should_cancel_order" time="5.172"><failure message="AssertionError: Confirming cancel on the detail page must cancel the pending order&#10;assert 101 == 102">sut = namespace(db=&lt;framework.client.Db object at 0x000001CA173D4520&gt;, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=&lt;function sut.&lt;locals&gt;.new_actor at 0x000001CA17AC9750&gt;, user=&lt;framework.client.Actor object at 0x000001CA17AF0A90&gt;)
+ui_page = &lt;Page url='http://127.0.0.1:6255/#/order/order-detail?orderId=11'&gt;
+
+    @pytest.mark.defect
+    @allure.issue('BUG-004','订单详情取消按钮调用删除接口')
+    def test_ui_detail_cancel_should_cancel_order(sut,ui_page):
+        oid=check(sut.user.submit(sut.user.cart(sut.product),sut.user.address()))['orderId']
+        LoginPage(ui_page).login(sut.user.username,config()['TEST_PASSWORD'])
+        response=OrderDetailPage(ui_page).cancel(oid)
+        row=order_row(sut.db,oid)
+        evidence('BUG-004',{'order_id':oid,'requested_url':response.url,'response':response.json(),'sql_order':row,
+            'stock_before_order':sut.baseline,'stock_after_click':stock(sut.db,sut.product['id'])})
+&gt;       assert row['order_status']==102, 'Confirming cancel on the detail page must cancel the pending order'
+E       AssertionError: Confirming cancel on the detail page must cancel the pending order
+E       assert 101 == 102
+
+tests\ui\test_core_pages.py:45: AssertionError</failure></testcase></testsuite></testsuites>

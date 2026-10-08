@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/login",
+  "request": {
+    "username": "qa_run_aeb40ca8bf924180",
+    "password": "[REDACTED]"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 700,
+    "errmsg": "账号密码不对"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "sql": "SELECT id,last_login_time FROM litemall_user WHERE id=%s",
+  "parameters": [
+    53
+  ],
+  "rows": [
+    {
+      "id": 53,
+      "last_login_time": "2026-10-08 15:08:49"
+    }
+  ]
+}

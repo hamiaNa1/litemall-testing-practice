@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_goods_list_limits[default-ten]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.12581829999999172,
+  "failure": null
+}

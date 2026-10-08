@@ -1,0 +1,7 @@
+{
+  "sql_file_executed": "sql/verify_business.sql",
+  "mysql_exit": 0,
+  "remaining_fixture_users": 0,
+  "product_1_stock": 100,
+  "note": "Default order/cart IDs are 0; previous fixture orders were cleaned. Use saved SQL snapshots for those orders."
+}

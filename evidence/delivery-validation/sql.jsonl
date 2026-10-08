@@ -1,0 +1,5 @@
+{"time": "2026-10-08T07:19:21.020536+00:00", "sql": "SELECT COUNT(*) AS n FROM litemall_user WHERE LEFT(username,7)=%s", "parameters": ["qa_run_"], "rows": [{"n": 0}]}
+{"time": "2026-10-08T07:19:21.020536+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T07:19:21.020536+00:00", "sql": "SELECT DATABASE() AS db,@@port AS port", "parameters": [], "rows": [{"db": "litemall_qa", "port": 13306}]}
+{"time": "2026-10-08T07:27:10.911668+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T07:27:10.913214+00:00", "sql": "SELECT COUNT(*) AS n FROM litemall_user WHERE LEFT(username,7)=%s", "parameters": ["qa_run_"], "rows": [{"n": 0}]}

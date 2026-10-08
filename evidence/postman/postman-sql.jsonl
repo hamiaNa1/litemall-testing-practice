@@ -1,0 +1,1 @@
+{"time": "2026-10-08T07:00:58.678774+00:00", "orders": [{"id": 2, "user_id": 7, "order_status": 102, "goods_price": "1998.00", "actual_price": "1998.00"}], "stock_before": 100, "stock_after": 100, "restored": true}

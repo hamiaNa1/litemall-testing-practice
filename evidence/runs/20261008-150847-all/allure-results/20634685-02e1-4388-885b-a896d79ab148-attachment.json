@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:6255/wx/order/submit",
+  "status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "orderId": 16,
+      "grouponLinkId": 0,
+      "payed": false
+    },
+    "errmsg": "成功"
+  }
+}

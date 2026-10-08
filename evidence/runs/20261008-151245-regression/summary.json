@@ -1,0 +1,225 @@
+{
+  "total": 36,
+  "passed": 36,
+  "failed": 0,
+  "skipped": 0,
+  "errors": 0,
+  "tests": [
+    {
+      "name": "test_login_invalid[empty-body]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.024
+    },
+    {
+      "name": "test_login_invalid[missing-password]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.008
+    },
+    {
+      "name": "test_login_invalid[missing-username]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.007
+    },
+    {
+      "name": "test_login_invalid[empty-strings]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.009
+    },
+    {
+      "name": "test_login_invalid[unknown-user]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.028
+    },
+    {
+      "name": "test_login_wrong_password",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.692
+    },
+    {
+      "name": "test_login_success_and_token",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.432
+    },
+    {
+      "name": "test_token_required[no-token-/wx/cart/index]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.03
+    },
+    {
+      "name": "test_token_required[no-token-/wx/order/list]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.028
+    },
+    {
+      "name": "test_token_required[no-token-/wx/address/list]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.026
+    },
+    {
+      "name": "test_token_required[invalid-token-/wx/cart/index]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.026
+    },
+    {
+      "name": "test_token_required[invalid-token-/wx/order/list]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.028
+    },
+    {
+      "name": "test_token_required[invalid-token-/wx/address/list]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.007
+    },
+    {
+      "name": "test_register_negative[required-fields]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.008
+    },
+    {
+      "name": "test_register_negative[invalid-mobile]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.022
+    },
+    {
+      "name": "test_register_negative[incorrect-code]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.027
+    },
+    {
+      "name": "test_sms_service_disabled",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.025
+    },
+    {
+      "name": "test_goods_list_limits[min-one]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.119
+    },
+    {
+      "name": "test_goods_list_limits[two]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.124
+    },
+    {
+      "name": "test_goods_list_limits[default-ten]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.136
+    },
+    {
+      "name": "test_goods_detail_sql_consistency",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.508
+    },
+    {
+      "name": "test_goods_search",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.442
+    },
+    {
+      "name": "test_cart_invalid_quantity[-1]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.434
+    },
+    {
+      "name": "test_cart_invalid_quantity[0]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.413
+    },
+    {
+      "name": "test_cart_over_stock",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.41
+    },
+    {
+      "name": "test_cart_missing_product",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.426
+    },
+    {
+      "name": "test_cart_add_update_delete",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.462
+    },
+    {
+      "name": "test_cart_cross_user_update_rejected",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.873
+    },
+    {
+      "name": "test_order_create_cancel_business_flow[1]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.499
+    },
+    {
+      "name": "test_order_create_cancel_business_flow[2]",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.506
+    },
+    {
+      "name": "test_order_required_params",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.407
+    },
+    {
+      "name": "test_empty_cart_no_order",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.419
+    },
+    {
+      "name": "test_other_user_order_access_rejected",
+      "classname": "tests.api.test_business",
+      "status": "passed",
+      "seconds": 0.861
+    },
+    {
+      "name": "test_ui_login_wrong_password",
+      "classname": "tests.ui.test_core_pages",
+      "status": "passed",
+      "seconds": 2.969
+    },
+    {
+      "name": "test_ui_search_product",
+      "classname": "tests.ui.test_core_pages",
+      "status": "passed",
+      "seconds": 6.307
+    },
+    {
+      "name": "test_ui_create_order_cancel_from_list",
+      "classname": "tests.ui.test_core_pages",
+      "status": "passed",
+      "seconds": 18.189
+    }
+  ]
+}

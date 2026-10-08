@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "path": "/wx/auth/login",
+  "request": {
+    "username": "",
+    "password": "[REDACTED]"
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 700,
+    "errmsg": "账号不存在"
+  }
+}

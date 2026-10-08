@@ -1,0 +1,17 @@
+.env
+.venv/
+.tools/
+.runtime/
+vendor/
+__pycache__/
+.pytest_cache/
+*.pyc
+postman/*.private.json
+logs/
+
+storage/
+*.private.json
+*.key
+*.pem
+Thumbs.db
+.DS_Store

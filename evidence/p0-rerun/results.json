@@ -1,0 +1,104 @@
+[
+  {
+    "id": "F001",
+    "title": "商品总数可查询",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F002",
+    "title": "商品详情关联库存货品",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F003",
+    "title": "缺少登录参数被拒绝",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F004",
+    "title": "不存在账号登录失败",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F005",
+    "title": "无 Token 不可查询购物车",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F006",
+    "title": "无效 Token 不可查询订单",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F007",
+    "title": "注册必填校验",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F008",
+    "title": "短信验证码服务未启用",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F009",
+    "title": "真实账号登录及 Token 提取",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F010",
+    "title": "购物车数量零被拒绝",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F011",
+    "title": "加入购物车不扣减库存",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F012",
+    "title": "购物车 SQL 数量正确",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F013",
+    "title": "下单生成待付款订单",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F014",
+    "title": "下单扣减库存",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F015",
+    "title": "订单详情与订单号关联",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F016",
+    "title": "取消订单状态变为102",
+    "status": "passed",
+    "detail": "All assertions passed"
+  },
+  {
+    "id": "F017",
+    "title": "取消恢复原库存",
+    "status": "passed",
+    "detail": "All assertions passed"
+  }
+]

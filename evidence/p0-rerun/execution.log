@@ -1,0 +1,18 @@
+F001 passed 商品总数可查询
+F002 passed 商品详情关联库存货品
+F003 passed 缺少登录参数被拒绝
+F004 passed 不存在账号登录失败
+F005 passed 无 Token 不可查询购物车
+F006 passed 无效 Token 不可查询订单
+F007 passed 注册必填校验
+F008 passed 短信验证码服务未启用
+F009 passed 真实账号登录及 Token 提取
+F010 passed 购物车数量零被拒绝
+F011 passed 加入购物车不扣减库存
+F012 passed 购物车 SQL 数量正确
+F013 passed 下单生成待付款订单
+F014 passed 下单扣减库存
+F015 passed 订单详情与订单号关联
+F016 passed 取消订单状态变为102
+F017 passed 取消恢复原库存
+{"passed": 17, "failed": 0}

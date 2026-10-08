@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "path": "/wx/order/cancel",
+  "request": {
+    "orderId": 14
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 402,
+    "errmsg": "参数值不对"
+  }
+}

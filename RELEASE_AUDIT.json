@@ -1,0 +1,78 @@
+{
+  "verdict": "可以上传（已审查的发布副本）",
+  "file_count": 1111,
+  "total_bytes": 34241866,
+  "scan_entries_including_archive_members": 2671,
+  "secret_findings": [],
+  "test_statistics": {
+    "total": 40,
+    "passed": 36,
+    "failed": 4,
+    "skipped": 0,
+    "errors": 0,
+    "tests": "See execution summary"
+  },
+  "excluded_private_roots": [
+    ".git",
+    ".pytest_cache",
+    ".runtime",
+    ".tools",
+    ".venv",
+    "__pycache__",
+    "logs",
+    "storage",
+    "vendor"
+  ],
+  "screenshots": "Original bytes; synthetic test data only",
+  "not_verified": [
+    "GitHub authenticated push and final public contents",
+    "fresh deployment on another computer",
+    "unknown secrets not covered by scanner"
+  ],
+  "source_modified": false,
+  "committed": false,
+  "published": false,
+  "publication_validation": {
+    "public_report_browser_checked": true,
+    "test_statistics": {
+      "failed": 4,
+      "broken": 0,
+      "skipped": 0,
+      "passed": 36,
+      "unknown": 0,
+      "total": 40
+    },
+    "failure_detail_loaded": "test_ui_detail_cancel_should_cancel_order",
+    "unchanged_test_code_files": 8,
+    "original_screenshots_verified": 13,
+    "trace_archives_valid": 4,
+    "trace_json_events_parsed": 1358,
+    "source_manifest_hashes_verified": 1101,
+    "sut_modified": false,
+    "note": "This verifies publication artifacts, not a new run of the 40 business tests."
+  },
+  "syntax_checks": {
+    "python_compile": true,
+    "powershell_parse": true
+  },
+  "git_state": {
+    "initialized": true,
+    "commits": 0,
+    "remote_configured": true,
+    "branch": "main",
+    "author_email": "GitHub noreply"
+  },
+  "largest_file_bytes": 6368426,
+  "ignore_checks": {
+    ".env": true,
+    ".runtime": true,
+    ".tools": true,
+    ".venv": true,
+    "vendor": true,
+    "storage": true
+  },
+  "license_checked": "Upstream LICENSE read; MIT; no license chosen for own test code",
+  "audit_stage": "immediately before approved first commit; pre-publication snapshot",
+  "target_repository": "https://github.com/hamiaNa1/litemall-testing-practice",
+  "explicit_commit_push_authorization": true
+}

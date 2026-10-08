@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "path": "/wx/cart/index",
+  "request": null,
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "cartTotal": {
+        "goodsCount": 0,
+        "checkedGoodsCount": 0,
+        "goodsAmount": 0,
+        "checkedGoodsAmount": 0
+      },
+      "cartList": []
+    },
+    "errmsg": "成功"
+  }
+}

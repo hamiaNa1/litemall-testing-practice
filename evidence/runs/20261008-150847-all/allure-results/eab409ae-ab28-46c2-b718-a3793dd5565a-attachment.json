@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "path": "/wx/order/cancel",
+  "request": {
+    "orderId": 12
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 725,
+    "errmsg": "订单不能取消"
+  }
+}

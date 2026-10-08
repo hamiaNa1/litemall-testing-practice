@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_goods_search",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.0260628999999426,
+  "failure": null
+}

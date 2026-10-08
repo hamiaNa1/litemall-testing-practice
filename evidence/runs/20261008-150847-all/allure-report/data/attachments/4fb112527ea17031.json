@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_order_required_params",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.0068330999997670006,
+  "failure": null
+}

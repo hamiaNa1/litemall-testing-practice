@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_order_create_cancel_business_flow[2]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.08813730000019859,
+  "failure": null
+}

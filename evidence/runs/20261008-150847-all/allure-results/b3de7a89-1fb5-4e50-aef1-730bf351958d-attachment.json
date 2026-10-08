@@ -1,0 +1,24 @@
+{
+  "method": "POST",
+  "path": "/wx/cart/delete",
+  "request": {
+    "productIds": [
+      1
+    ]
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": {
+      "cartTotal": {
+        "goodsCount": 0,
+        "checkedGoodsCount": 0,
+        "goodsAmount": 0,
+        "checkedGoodsAmount": 0
+      },
+      "cartList": []
+    },
+    "errmsg": "成功"
+  }
+}

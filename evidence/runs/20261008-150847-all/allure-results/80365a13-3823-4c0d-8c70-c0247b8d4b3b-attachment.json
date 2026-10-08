@@ -1,0 +1,9 @@
+{
+  "sql": "SELECT DATABASE() AS db",
+  "parameters": [],
+  "rows": [
+    {
+      "db": "litemall_qa"
+    }
+  ]
+}

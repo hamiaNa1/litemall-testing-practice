@@ -1,0 +1,7 @@
+{"time": "2026-10-08T07:00:47.351576+00:00", "sql": "SELECT p.id,p.goods_id,p.number,p.price,g.name FROM litemall_goods_product p JOIN litemall_goods g ON g.id=p.goods_id WHERE p.deleted=0 AND g.deleted=0 AND g.is_on_sale=1 AND p.number>=5 ORDER BY p.id LIMIT 1", "parameters": [], "rows": [{"id": 1, "goods_id": 1181000, "number": 100, "price": "999.00", "name": "母亲节礼物-舒适安睡组合"}]}
+{"time": "2026-10-08T07:00:47.353590+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T07:00:58.674765+00:00", "sql": "SELECT id,user_id,order_status,goods_price,actual_price FROM litemall_order WHERE user_id=%s", "parameters": [7], "rows": [{"id": 2, "user_id": 7, "order_status": 102, "goods_price": "1998.00", "actual_price": "1998.00"}]}
+{"time": "2026-10-08T07:00:58.676769+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T07:00:58.677774+00:00", "sql": "SELECT id,number FROM litemall_goods_product WHERE id=%s", "parameters": [1], "rows": [{"id": 1, "number": 100}]}
+{"time": "2026-10-08T07:00:58.679773+00:00", "sql": "SELECT id,order_status FROM litemall_order WHERE user_id=%s", "parameters": [7], "rows": [{"id": 2, "order_status": 102}]}
+{"time": "2026-10-08T07:00:58.687286+00:00", "sql": "SELECT id FROM litemall_user WHERE id=%s", "parameters": [7], "rows": []}

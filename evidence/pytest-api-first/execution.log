@@ -1,0 +1,88 @@
+.................................FFF                                     [100%]
+================================== FAILURES ===================================
+_____________ test_missing_cart_number_should_be_validation_error _____________
+
+sut = namespace(db=<framework.client.Db object at 0x000001CB1E903D00>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x000001CB1E8C3370>, user=<framework.client.Actor object at 0x000001CB1E903100>)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-001','缺少数量导致内部异常')
+    def test_missing_cart_number_should_be_validation_error(sut):
+        p=sut.product
+        response=sut.user.api.call('POST','/wx/cart/add',body={'goodsId':p['goods_id'],'productId':p['id']})
+        evidence('BUG-001',{'response':response.json(),'stock':stock(sut.db,p['id'])})
+>       check(response,401)
+
+tests\api\test_business.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+response = <Response [200]>, errno = 401, http = 200
+
+    def check(response, errno=0, http=200):
+        assert response.status_code == http, f'HTTP expected {http}, actual {response.status_code}'
+        data = response.json()
+        assert isinstance(data, dict) and isinstance(data.get('errno'), int), 'Missing integer errno'
+        assert isinstance(data.get('errmsg'), str), 'Missing errmsg'
+>       assert data['errno'] == errno, f'Business errno expected {errno}, actual {data["errno"]}: {data["errmsg"]}'
+E       AssertionError: Business errno expected 401, actual 502: 系统内部错误
+
+framework\client.py:64: AssertionError
+----------------------------- Captured log setup ------------------------------
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+------------------------------ Captured log call ------------------------------
+INFO     root:client.py:53 POST /wx/cart/add HTTP=200 errno=502
+__________________ test_submit_foreign_cart_must_be_rejected __________________
+
+sut = namespace(db=<framework.client.Db object at 0x000001CB1E903D00>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x000001CB1E9BE200>, user=<framework.client.Actor object at 0x000001CB1E8C9D50>)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-002','跨用户购物车可被下单')
+    def test_submit_foreign_cart_must_be_rejected(sut):
+        victim=sut.new_actor(); cid=victim.cart(sut.product,1); aid=sut.user.address()
+        before=sut.db.query('SELECT id,user_id,product_id,number FROM litemall_cart WHERE id=%s',(cid,))
+        response=sut.user.submit(cid,aid)
+        after=sut.db.query('SELECT id,user_id,product_id,number FROM litemall_cart WHERE id=%s',(cid,))
+        orders=sut.db.query('SELECT id,user_id,order_status FROM litemall_order WHERE user_id=%s',(sut.user.id,))
+        evidence('BUG-002',{'victim_user':victim.id,'attacker_user':sut.user.id,'cart_id':cid,'cart_before':before,
+            'cart_after':after,'orders':orders,'stock_before':sut.baseline,'stock_after':stock(sut.db,sut.product['id']),'response':response.json()})
+        assert response.status_code==200
+>       assert response.json()['errno'] in [401,402,715], 'Foreign cart must be rejected without creating an order'
+E       AssertionError: Foreign cart must be rejected without creating an order
+E       assert 0 in [401, 402, 715]
+
+tests\api\test_business.py:148: AssertionError
+----------------------------- Captured log setup ------------------------------
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+------------------------------ Captured log call ------------------------------
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/cart/fastadd HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/address/save HTTP=200 errno=0
+INFO     root:client.py:53 POST /wx/order/submit HTTP=200 errno=0
+---------------------------- Captured log teardown ----------------------------
+INFO     root:client.py:53 POST /wx/order/cancel HTTP=200 errno=0
+_______________ test_mismatched_goods_product_must_be_rejected ________________
+
+sut = namespace(db=<framework.client.Db object at 0x000001CB1E903D00>, product={'id': 1, 'goods_id': 1181000, 'number': 100,...or=<function sut.<locals>.new_actor at 0x000001CB1E9BE050>, user=<framework.client.Actor object at 0x000001CB1EA8FE20>)
+
+    @pytest.mark.defect
+    @allure.issue('BUG-003','商品与货品所属关系未校验')
+    def test_mismatched_goods_product_must_be_rejected(sut):
+        p=sut.product
+        foreign=sut.db.query('SELECT id,goods_id,price,number FROM litemall_goods_product WHERE deleted=0 AND number>0 AND goods_id<>%s ORDER BY id LIMIT 1',(p['goods_id'],))[0]
+        response=sut.user.api.call('POST','/wx/cart/add',body={'goodsId':p['goods_id'],'productId':foreign['id'],'number':1})
+        rows=sut.db.query('SELECT id,goods_id,product_id,goods_name,price FROM litemall_cart WHERE user_id=%s',(sut.user.id,))
+        evidence('BUG-003',{'requested_goods':p['goods_id'],'foreign_product':foreign,'stored_cart':rows,'response':response.json()})
+        assert response.status_code==200
+>       assert response.json()['errno'] in [401,402,713], 'Product must belong to the supplied goods'
+E       AssertionError: Product must belong to the supplied goods
+E       assert 0 in [401, 402, 713]
+
+tests\api\test_business.py:160: AssertionError
+----------------------------- Captured log setup ------------------------------
+INFO     root:client.py:53 POST /wx/auth/login HTTP=200 errno=0
+------------------------------ Captured log call ------------------------------
+INFO     root:client.py:53 POST /wx/cart/add HTTP=200 errno=0
+=========================== short test summary info ===========================
+FAILED tests/api/test_business.py::test_missing_cart_number_should_be_validation_error
+FAILED tests/api/test_business.py::test_submit_foreign_cart_must_be_rejected
+FAILED tests/api/test_business.py::test_mismatched_goods_product_must_be_rejected
+3 failed, 33 passed in 10.74s

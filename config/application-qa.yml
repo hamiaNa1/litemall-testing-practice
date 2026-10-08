@@ -1,0 +1,20 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:13306/litemall_qa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+      username: ${DB_USER}
+      password: ${DB_PASSWORD}
+litemall:
+  wx:
+    app-id: local-test-placeholder
+    app-secret: local-test-placeholder
+  storage:
+    active: local
+  notify:
+    mail:
+      enable: false
+    sms:
+      enable: false

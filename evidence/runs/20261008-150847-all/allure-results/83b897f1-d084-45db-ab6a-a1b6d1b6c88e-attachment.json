@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/ui/test_core_pages.py::test_ui_search_product",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.8826884000000064,
+  "failure": null
+}

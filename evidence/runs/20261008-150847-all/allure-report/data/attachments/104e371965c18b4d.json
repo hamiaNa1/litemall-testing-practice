@@ -1,0 +1,6 @@
+{
+  "test": "tests/ui/test_core_pages.py::test_ui_login_wrong_password",
+  "page_errors": [],
+  "screenshot": "[PROJECT]\\evidence\\runs\\20261008-150847-all\\ui\\test_ui_login_wrong_password\\success.png",
+  "trace": "[PROJECT]\\evidence\\runs\\20261008-150847-all\\ui\\test_ui_login_wrong_password\\trace.zip"
+}

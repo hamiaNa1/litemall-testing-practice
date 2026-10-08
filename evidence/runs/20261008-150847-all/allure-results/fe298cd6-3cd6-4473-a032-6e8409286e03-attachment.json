@@ -1,0 +1,16 @@
+{
+  "method": "POST",
+  "path": "/wx/cart/fastadd",
+  "request": {
+    "goodsId": 1181000,
+    "productId": 1,
+    "number": 1
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "data": 19,
+    "errmsg": "成功"
+  }
+}

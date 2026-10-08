@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_register_negative[incorrect-code]",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.017964699999993172,
+  "failure": null
+}

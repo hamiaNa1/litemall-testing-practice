@@ -1,0 +1,16 @@
+{
+  "method": "POST",
+  "path": "/wx/cart/update",
+  "request": {
+    "id": 18,
+    "goodsId": 1181000,
+    "productId": 1,
+    "number": 3
+  },
+  "params": null,
+  "http_status": 200,
+  "response": {
+    "errno": 0,
+    "errmsg": "成功"
+  }
+}

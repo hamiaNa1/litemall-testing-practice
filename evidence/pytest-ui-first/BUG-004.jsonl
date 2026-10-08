@@ -1,0 +1,1 @@
+{"time": "2026-10-08T07:07:37.963948+00:00", "order_id": 11, "requested_url": "http://127.0.0.1:6255/wx/order/delete", "response": {"errno": 725, "errmsg": "订单不能删除"}, "sql_order": {"id": 11, "user_id": 51, "order_status": 101, "goods_price": "999.00", "freight_price": "0.00", "actual_price": "999.00"}, "stock_before_order": 100, "stock_after_click": 99}

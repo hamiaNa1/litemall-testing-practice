@@ -1,0 +1,7 @@
+{
+  "nodeid": "tests/api/test_business.py::test_login_success_and_token",
+  "phase": "call",
+  "outcome": "passed",
+  "duration": 0.0068526999998539395,
+  "failure": null
+}
