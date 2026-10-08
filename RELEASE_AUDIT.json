@@ -30,7 +30,7 @@
     "unknown secrets not covered by scanner"
   ],
   "source_modified": false,
-  "committed": false,
+  "committed": true,
   "published": false,
   "publication_validation": {
     "public_report_browser_checked": true,
@@ -57,7 +57,7 @@
   },
   "git_state": {
     "initialized": true,
-    "commits": 0,
+    "commits": 1,
     "remote_configured": true,
     "branch": "main",
     "author_email": "GitHub noreply"
@@ -72,7 +72,8 @@
     "storage": true
   },
   "license_checked": "Upstream LICENSE read; MIT; no license chosen for own test code",
-  "audit_stage": "immediately before approved first commit; pre-publication snapshot",
+  "audit_stage": "before final initial upload; one local commit and an evidence-byte correction prepared",
   "target_repository": "https://github.com/hamiaNa1/litemall-testing-practice",
-  "explicit_commit_push_authorization": true
+  "explicit_commit_push_authorization": true,
+  "git_eol_policy": ".gitattributes disables conversion; audited bytes retained across clones"
 }
